@@ -1,5 +1,5 @@
 # FAFN
-Code release for **FAFN: Feature Alignment and Filtering Network for Fine-Grained Few-Shot Image Classification**.
+Code release for **Multi-Scale Spatial–Frequency Collaboration Network for Few-Shot Fine-Grained Learning**.
 
 ## Dataset
 
