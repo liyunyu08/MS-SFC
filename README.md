@@ -11,28 +11,17 @@ The official link of CUB-200-2011 is [here](http://www.vision.caltech.edu/datase
 
 ## Train
 
-* To train FAFN on `CUB_fewshot_cropped` with Conv-4 backbone under the 1/5-shot setting, run the following command lines:
+* To train MS-SFC on `CUB_fewshot_cropped` with Conv-4 backbone under the 1/5-shot setting, run the following command lines:
 
   ```shell
-  cd experiments/CUB_fewshot_cropped/Ours/Conv-4
-  ./train.sh
+  python train.py -batch 64 -dataset cub -gpu 0 -extra_dir cub
   ```
 
-* For ResNet-12 backbone, run the following command lines:
-
-  ```shell
-  cd experiments/CUB_fewshot_cropped/Ours/ResNet-12
-  ./train.sh
-  ```
 
 ## Test
 
 ```shell
-    cd experiments/CUB_fewshot_cropped/Ours/Conv-4
-    python ./test.py
-    
-    cd experiments/CUB_fewshot_cropped/Ours/ResNet-12
-    python ./test.py
+python test.py -batch 64 -dataset cub -gpu 0 -extra_dir cub 
 ```
 
 ## Contact
@@ -40,4 +29,4 @@ The official link of CUB-200-2011 is [here](http://www.vision.caltech.edu/datase
 Thanks for your attention!
 If you have any suggestion or question, you can leave a message here or contact us directly:
 
-- jijie@lut.edu.cn
+- yly@stu.xidian.edu.cn
